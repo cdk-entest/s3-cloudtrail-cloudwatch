@@ -23,7 +23,7 @@ this filter pattern count 1 each time a PutObject occur.
 ```
 Here is the graph metric with sum of PutObject within each 5 minutes 
 
-
+![Screen Shot 2022-09-01 at 14 39 35](https://user-images.githubusercontent.com/20411077/187861321-daf0a35b-9a43-4920-8483-f340303d3620.png)
 
 Then an alarm can be created for example if sum of PutObject within 5 minutes greater than 1000
 
