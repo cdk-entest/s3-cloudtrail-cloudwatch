@@ -9,14 +9,14 @@ this shows how to monitor s3 data events with cloudtrail and cloudwatch.
 
 ## Enable CT for a S3 Bucket
 
-## Configure a CW LogGroup 
+## Create a CW LogGroup 
 
-## Query Log Event with CW Insight 
+## Query LogEvent  
 ```
 filter eventName="PutObject"
 ```
 
-## Metric Filter, and Alarm 
+## Metric Filter
 this filter pattern count 1 each time a PutObject occur.  
 ```
 {$.eventName="PutObject"}
