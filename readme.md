@@ -2,7 +2,7 @@
 [GitHub](https://github.com/entest-hai/s3-cloudtrail-cloudwatch) 
 this shows how to monitor s3 data events with cloudtrail and cloudwatch. 
 
-- cloudtrail monitors s3 data events 
+- cloudtrail monitors s3 data events of a bucket 
 - save the log events to a cloudwatch log group 
 - use cloudwatch insight to query 
 - create a cloudwatch metric and an alarm 
