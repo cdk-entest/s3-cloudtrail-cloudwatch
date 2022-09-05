@@ -11,9 +11,14 @@ this shows how to monitor s3 data events with cloudtrail and cloudwatch.
 
 ## Create a CW LogGroup 
 
-## Query LogEvent  
+## Query from Log Insight 
+basic query example 
+
 ```
-filter eventName="PutObject"
+fields @timestamp, eventSource |
+  filter eventName="PutObject" | 
+  stats count(*) by eventSource |
+  limit 10
 ```
 
 ## Metric Filter
