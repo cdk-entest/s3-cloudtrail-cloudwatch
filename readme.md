@@ -44,7 +44,7 @@ new aws_cloudwatch.Alarm(this, "S3PutObjectAlarm", {
 ```
 
 ## CloudTrail
-create a trail 
+create a trail, this L2 construct will automatically create a role for trail to write to a log group. 
 ```tsx
 const trail = new aws_cloudtrail.Trail(
   this,
@@ -57,7 +57,7 @@ const trail = new aws_cloudtrail.Trail(
 )
 ```
 
-trail event selector in cloudformation and cdk 
+use selector to enable trail for a specific bucket with a prefix. trail event selector in cloudformation and cdk 
 ```tsx
 trail.addS3EventSelector(
   [
